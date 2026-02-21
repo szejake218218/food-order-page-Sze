@@ -103,3 +103,20 @@ body {
     text-decoration: none;
     border-radius: 25px;
 }
+
+/* 當螢幕寬度小於 600px (手機) */
+@media (max-width: 600px) {
+    .food-card {
+        width: 90%;      /* 讓方格佔滿螢幕寬度的 90%，這樣方格就變大了 */
+        padding: 20px;   /* 增加內部空間 */
+    }
+    
+    h2 {
+        font-size: 28px; /* 讓菜名變大 */
+    }
+    
+    p {
+        font-size: 22px; /* 讓價格變大 */
+    }
+}
+
