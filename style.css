@@ -33,13 +33,13 @@ img {
 
 .order {
     display: inline-block;
-    margin-top: 10px;
-    background-color: #ff4757;
+    margin-top: 17px;
+    background-color: #fa7984;
     color: white;
     padding: 8px 25px;
     text-decoration: none;
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 50px;
+    font-size: 30px;
 
 }
 
@@ -104,19 +104,19 @@ body {
     border-radius: 25px;
 }
 
-/* 當螢幕寬度小於 600px (手機) */
+
 @media (max-width: 600px) {
     .food-card {
-        width: 90%;      /* 讓方格佔滿螢幕寬度的 90%，這樣方格就變大了 */
-        padding: 20px;   /* 增加內部空間 */
+        width: 90%;
+        padding: 20px;
     }
-    
-    h2 {
-        font-size: 28px; /* 讓菜名變大 */
+
+    h3 {
+        font-size: 28px;
     }
-    
+
     p {
-        font-size: 22px; /* 讓價格變大 */
+        font-size: 22px;
     }
 }
 
