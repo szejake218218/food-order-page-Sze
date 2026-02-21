@@ -1,0 +1,122 @@
+.food-card {
+    /* --- 核心修改：限制整体宽度 --- */
+    max-width: 300px;
+    /* 限制卡片最大宽度，这样它就不会铺满全屏 */
+    margin: 20px auto;
+    /* margin: auto 让整个卡片在页面水平居中 */
+
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* 稍微增加内边距，更有空间感 */
+    border-radius: 15px;
+    /* 圆角稍微调大一点点更现代 */
+    text-align: center;
+
+}
+
+.food-container {
+    display: flex;
+    /* 开启弹性布局 */
+    flex-wrap: wrap;
+    /* 允许自动换行 */
+    justify-content: center;
+    /* 居中显示卡片 */
+    gap: 20px;
+    /* 卡片之间的间距 */
+    padding: 20px;
+}
+
+img {
+    /* 因为父容器 .food-card 变小了，这里的 100% 会自动让图片跟着缩小 */
+    width: 100%;
+    max-width: 220px;
+    /* 也可以额外限制图片的最大宽度 */
+    height: auto;
+    border-radius: 10px;
+}
+
+.order {
+    display: inline-block;
+    /* 确保 padding 生效且居中 */
+    margin-top: 10px;
+    /* 和上面的文字拉开一点距离 */
+    background-color: #ff4757;
+    color: white;
+    padding: 8px 25px;
+    /* 稍微调整按钮比例 */
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    /* 缩小字体 */
+}
+
+.cart-bar {
+    position: fixed;
+    /* 固定定位 */
+    bottom: 0;
+    /* 贴死底部 */
+    left: 0;
+    width: 100%;
+    /* 撑满全屏 */
+    background-color: #77a9d8;
+    /* 深色背景 */
+    color: white;
+    display: flex;
+    /* 左右布局 */
+    justify-content: space-between;
+    /* 内容两端对齐 */
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    /* 确保 padding 不会撑破宽度 */
+    z-index: 1000;
+}
+
+body {
+    /* 确保底部留出足够空间，150px 通常比购物车栏高一点点 */
+    padding-bottom: 150px;
+}
+
+#total-count,
+#total-price {
+    color: #ffa502;
+    font-size: 22px;
+}
+
+.checkout-btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* 成功页面的容器 */
+.success-container {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* 那个绿色的圆圈勾勾 */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}

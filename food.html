@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>點餐單</h1>
+    </div>
+
+    <div class="food-container">
+        <div class="food-card">
+            <img src="https://cicili.tv/wp-content/uploads/2024/05/DIY-Shrimp-Siu-Mai-at-Home-Small-2.jpg" width="200"
+                height="130">
+            <h3>燒賣</h3>
+            <p class="price">$28</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(28)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Shrimp_dumplings.jpg" width="200"
+                height="130">
+            <h3>蝦餃</h3>
+            <p class="price">$38</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(38)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://tasteasianfood.com/wp-content/uploads/2024/08/char-siu-bao-image-24-featured-image.jpeg"
+                width="220" height="180">
+            <h3>叉燒包</h3>
+            <p class="price">$18</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(18)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/195431/c3756a0b2684dd7a.jpg" width="200"
+                height="130">
+            <h3>腸粉</h3>
+            <p class="price">$25</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(25)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://cdn.hk01.com/di/media/images/994737/org/abfce7a9b36389ffb0bbafa447aec14b.jpg/4RQqIrBBz7zu_0eRr5MdHsktc0gCUD8VhMo_aITKP2g?v=w1920"
+                width="200" height="130">
+            <h3>鳳爪</h3>
+            <p class="price">$28</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(28)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://cdn.hk01.com/di/media/images/1559688/org/ca49c28f0411d6ea7da7c674b714d05e.JPG/TmD09ASnVyQRWOpyr3bIApfCmV3K2Wld4haPneIWj50?v=w1920"
+                width="200" height="130">
+            <h3>糯米雞</h3>
+            <p class="price">$35</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(35)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbAqyne2euWroJPaxxBwz5tCn_7afvCiSp3g&s"
+                width="200" height="130">
+            <h3>蘿蔔糕</h3>
+            <p class="price">$30</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(30)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://img.ltn.com.tw/Upload/food/page/2015/02/12/150212-298-4-hG7yU.jpg" width="200"
+                height="130">
+            <h3>小籠包</h3>
+            <p class="price">$38</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(38)">order</a>
+        </div>
+        <div class="food-card">
+            <img src="https://katering.com.hk/cdn/shop/products/O_w_U_8_a5cc1907-fbc4-4207-bb0f-55f112f3af1b_630x.JPG?v=1569392486"
+                width="200" height="130">
+            <h3>鹹水角</h3>
+            <p class="price">$25</p>
+            <a href="javascript:void(0)" class="order" onclick="addFood(25)">order</a>
+        </div>
+    </div>
+
+
+    <div class="cart-bar">
+        <div>
+            數量: <span id="total-count">0</span> |
+            總計: $<span id="total-price">0</span>
+        </div>
+        <a href="order.html" class="checkout-btn">下單</a>
+    </div>
+
+    <script>
+        let count = 0;
+        let price = 0;
+
+        function addFood(money) {
+            count = count + 1;
+            price = price + money;
+
+            // 更新网页上的文字
+            document.getElementById("total-count").innerText = count;
+            document.getElementById("total-price").innerText = price;
+        }
+    </script>
+
+
+
+
+</body>
